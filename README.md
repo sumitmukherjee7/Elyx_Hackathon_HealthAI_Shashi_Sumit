@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# Elyx Hackathon HealthAI Dataset Generator
 
-## Project info
+Generate realistic healthcare conversations simulating 8 months of personalized member–team interactions, complete with decision traceability and AI-driven insights.
 
-**URL**: https://lovable.dev/projects/128f684a-ffe9-46b8-9170-cb12ba3d2356
+## 🎯 What This Does
 
-## How can I edit this code?
+This notebook creates a comprehensive healthcare journey dataset featuring:
+- **Realistic conversations** between Rohan Patel and the Elyx care team
+- **Expert personas** (Concierge, Physician, Nutritionist, etc.)
+- **Healthcare scenarios** (supplement reviews, workouts, medical tests, device calibration)
+- **Professional outputs**: Conversation logs, episode summaries, and objective reviews
 
-There are several ways of editing your application.
+You can also explore the **visualization dashboard** here:  
+👉 [https://elyx-life-hackathon-health-ai-task.vercel.app/](https://elyx-life-hackathon-health-ai-task.vercel.app/)
 
-**Use Lovable**
+## 🚀 Quick Setup
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/128f684a-ffe9-46b8-9170-cb12ba3d2356) and start prompting.
+1. Download `elyx_hackathon_perplexity.ipynb` and open in Google Colab.  
+2. Connect your Google Drive when prompted.  
+3. In the first code cell, replace 'Your_api_key' with your Perplexity API key.  
+4. Select **Runtime > Run all** and wait for completion.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Outputs
 
-**Use your preferred IDE**
+- `convos.docx` – Full 8-month chat logs  
+- `summaries.docx` – Structured episode summaries  
+- `objective.docx` – Data-driven episode reviews  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Find these in your Google Drive and open with Google Docs.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔧 Customization & Troubleshooting
 
-Follow these steps:
+- **Member Profile**: Edit `member_profile` in Cell 4.   
+- **Dependencies**: The notebook installs `python-docx`, `langchain`, and `requests` automatically.  
+- **API Errors**: Verify your Perplexity key and credits.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/128f684a-ffe9-46b8-9170-cb12ba3d2356) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This single notebook workflow empowers you to generate, customize, and review a full-scale AI-powered healthcare concierge dataset on your own.
