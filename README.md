@@ -4,36 +4,46 @@ Generate realistic healthcare conversations simulating 8 months of personalized 
 
 ## 🎯 What This Does
 
-This notebook creates a comprehensive healthcare journey dataset featuring:
-- **Realistic conversations** between Rohan Patel and the Elyx care team
-- **Expert personas** (Concierge, Physician, Nutritionist, etc.)
-- **Healthcare scenarios** (supplement reviews, workouts, medical tests, device calibration)
-- **Professional outputs**: Conversation logs, episode summaries, and objective reviews
+This project contains two major parts:
 
-You can also explore the **visualization dashboard** here:  
-👉 [https://elyx-life-hackathon-health-ai-task.vercel.app/](https://elyx-life-hackathon-health-ai-task.vercel.app/)
+1. **Dataset Generation (Colab Notebook)**  
+   The notebook `Elyx_Hackathon_HealthAI.ipynb` automatically generates a synthetic healthcare journey for a member (Rohan Patel).  
+   It includes:
+   - Conversations with the Elyx care team (Concierge, Physician, Nutritionist, etc.)
+   - Personalized medical and wellness scenarios
+   - Episode summaries and objective reviews  
+   You can run this notebook in **Google Colab** to reproduce or customize the dataset.
 
-## 🚀 Quick Setup
+2. **Visualization Dashboard**  
+   Explore the generated data in an interactive dashboard:  
+   👉 [https://elyx-life-hackathon-health-ai-task.vercel.app/](https://elyx-life-hackathon-health-ai-task.vercel.app/)
 
-1. Download `elyx_hackathon_perplexity.ipynb` and open in Google Colab.  
-2. Connect your Google Drive when prompted.  
-3. In the first code cell, replace 'Your_api_key' with your Perplexity API key.  
-4. Select **Runtime > Run all** and wait for completion.
+## 📄 Repository Files
+
+- **`Elyx_Hackathon_HealthAI.ipynb`** – Main notebook to generate datasets using Perplexity API.  
+- **`final_conversations_HealthAI.docx`** – Full 8-month conversation logs between the member and Elyx team.  
+- **`final_objective_HealthAI.docx`** – Data-driven, objective review of episodes highlighting progress and challenges.  
+- **`final_summaries_HealthAI.docx`** – Structured summaries of each episode for quick reference.  
+- **`index.html` / `src/` / `public/`** – Source code for the visualization dashboard.  
+- **`README.md`** – Documentation.  
+
+## 🚀 Quick Setup (Notebook)
+
+1. Open `Elyx_Hackathon_HealthAI.ipynb` in **Google Colab**.  
+2. Mount your Google Drive when prompted.  
+3. Replace `'Your_api_key'` with your **Perplexity API key** in the first cell.  
+4. Run **Runtime > Run all** to generate outputs.  
+
+The `.docx` outputs will appear in your Google Drive automatically.
 
 ## 📁 Outputs
 
-- `convos.docx` – Full 8-month chat logs  
-- `summaries.docx` – Structured episode summaries  
-- `objective.docx` – Data-driven episode reviews  
+- `convos.docx` → Detailed conversations  
+- `summaries.docx` → Episode summaries  
+- `objective.docx` → Objective review  
 
-Find these in your Google Drive and open with Google Docs.
-
-## 🔧 Customization & Troubleshooting
-
-- **Member Profile**: Edit `member_profile` in Cell 4.   
-- **Dependencies**: The notebook installs `python-docx`, `langchain`, and `requests` automatically.  
-- **API Errors**: Verify your Perplexity key and credits.
+*(Already uploaded here as `final_conversations_HealthAI.docx`, `final_summaries_HealthAI.docx`, `final_objective_HealthAI.docx`)*  
 
 ---
 
-This single notebook workflow empowers you to generate, customize, and review a full-scale AI-powered healthcare concierge dataset on your own.
+This workflow enables **end-to-end dataset generation, storage, and visualization** for healthcare AI hackathons.
